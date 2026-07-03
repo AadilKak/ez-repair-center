@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logoAsset from "@/assets/ez-repair-logo.png.asset.json";
+import logo from "@/assets/ez-repair-logo.png";
 import heroTruck from "@/assets/hero-truck.jpg";
 import {
   Wrench,
@@ -76,7 +76,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[var(--surface-dark)]/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="EZ Repair Center LLC" className="h-14 w-auto" />
+          <img src={logo} alt="EZ Repair Center LLC" className="h-14 w-auto" />
         </a>
         <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex">
           <a href="#services" className="transition hover:text-white">Services</a>
@@ -399,7 +399,7 @@ function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 sm:px-6 md:flex-row lg:px-8">
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="EZ Repair Center LLC" className="h-10 w-auto" />
+            <img src={logo} alt="EZ Repair Center LLC" className="h-10 w-auto" />
             <span className="text-sm text-white/60">
               © {new Date().getFullYear()} EZ Repair Center LLC. All rights reserved.
             </span>
